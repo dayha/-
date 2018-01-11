@@ -1,0 +1,931 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>麦子商城</title>
+    <link rel="stylesheet" href="css/quanbubian.css">
+    <link rel="stylesheet" href="css/login.css">
+    <link rel="stylesheet" href="css/index.css">
+    <link rel="stylesheet" href="css/footer.css">
+    <script src="js/jquery/dist/jquery.min.js"></script>
+    <script src="js/login.js"></script>
+    <script src="js/footer.js"></script>
+</head>
+<body>
+<!--头部盒子-->
+<div id="top_box">
+    <!--logo盒子-->
+    <div class="logo">
+        <img src="image/logo.gif" alt="">
+    </div>
+    <!--用户登录盒子-->
+    <div class="user_login">
+        <p>您好，欢迎来到京东商城!想继续购物？<a href="login/login.html">[请登录]</a>,新用户？<a href="#">[请注册]</a></p>
+    </div>
+    <!--头部菜单盒子和日期-->
+    <div class="top_submenu">
+        <div class="submenu_box">
+            <ul>
+                <li><a href="#">帮助中心</a></li>
+                <li><a href="#">客户反馈</a></li>
+                <li><a href="#">网站地图</a></li>
+                <li><a href="#">加入收藏</a></li>
+            </ul>
+        </div>
+        <div class="day_box">
+            <p id="date_box"></p>
+        </div>
+    </div>
+    <!--通告栏-->
+    <div class="top_notice">
+        <marquee direction="up" scrollamount="2" onmouseover="stop()" onmouseout="start()">
+            <p>
+                <img src="image/notice.gif">
+                <a href="#">仿京东商城最强大版本升级，感谢用户支持域信任</a>
+            </p>
+            <br />
+            <p>
+                <img src="image/notice.gif">
+                <a href="#">仿京东商城最强大版本升级，感谢用户支持域信任</a>
+            </p>
+            <br />
+            <p>
+                <img src="image/notice.gif">
+                <a href="#">仿京东商城最强大版本升级，感谢用户支持域信任</a>
+            </p>
+        </marquee>
+    </div>
+</div>
+<!--导航菜单-->
+<div id="nav_box">
+    <!--菜单盒子-->
+    <div class="nav_small">
+        <ul>
+            <li>
+                <a href="#">网站首页</a>
+            </li>
+            <li>
+                <a href="#">风雷导航</a>
+            </li>
+            <li>
+                <a href="#">品牌导航</a>
+            </li>
+            <li class="hellp_box">
+                <a href="#">购物帮助</a>
+            </li>
+            <li>
+                <a href="#">新闻资讯</a>
+            </li>
+            <li>
+                <a href="#">报价单</a>
+            </li>
+            <li>
+                <a href="#" class="upright_box">发货单</a>
+            </li>
+        </ul>
+    </div>
+    <!--搜索盒子-->
+    <div class="search_box">
+        <div class="search_smallbox">
+            <span>商品搜索：</span>
+            <select>
+                <option value="">所有分类</option>
+                <option value="">服装</option>
+                <option value="">鞋类</option>
+                <option value="">食品</option>
+                <option value="">生活用品</option>
+            </select>
+            <input type="search" name="search" id="search" />
+            <button>搜索</button>
+            <span>高级/组合搜索</span>
+        </div>
+        <div class="shopping_box">
+            <span class="shopping_car">购物车暂时为空</span>
+            <span class="balance_box">去结算</span>
+            <span class="shopping_user">用户中心</span>
+        </div>
+    </div>
+</div>
+<!--中间大盒子-->
+<div id="middle_box">
+    <!--用户信息-->
+    <div class="user_box">
+        <span>用户信息</span>
+        <div class="info_box">
+            <p>
+                <img src="image/user1.gif" />
+                <a href="#">注册</a>/
+                <a href="#">登录</a>
+            </p>
+            <p>
+                <img src="image/user8.gif" />
+                <a href="#">购物车(0)</a>
+            </p>
+            <p>
+                <img src="image/user0.gif" />
+                <a href="#">对比框(0)</a>
+            </p>
+        </div>
+    </div>
+    <!--商品分类-->
+    <div class="commodity_box">
+        <p class="commodity_name">商品分类</p>
+        <div class="commodity_smallbox">
+            <ul class="title_box">
+                <span>家用电器</span>
+                <li class="appliance">
+                    <ul class="title_text">
+                        <li>
+                            <a href="#" class="spacing">大&nbsp;&nbsp;家&nbsp;&nbsp;电</a>
+                        </li>
+                        <li>
+                            <a href="#" class="none">厨房电器</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="appliance">
+                    <ul class="title_text">
+                        <li>
+                            <a href="#">汽车用品</a>
+                        </li>
+                        <li>
+                            <a href="#" class="none">个人护理</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="appliance">
+                    <ul class="title_text">
+                        <li>
+                            <a href="#">生活家电</a>
+                        </li>
+                        <li>
+                            <a href="#" class="none">其他家电</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+            <ul class="title_box">
+                <span>手机数码</span>
+                <li class="appliance">
+                    <ul class="title_text">
+                        <li>
+                            <a href="#">数码相机</a>
+                        </li>
+                        <li>
+                            <a href="#" class="none">手机通信</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="appliance">
+                    <ul class="title_text">
+                        <li>
+                            <a href="#">时尚影音</a>
+                        </li>
+                        <li>
+                            <a href="#" class="none">数码配件</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="appliance">
+                    <ul class="title_text">
+                        <li>
+                            <a href="#">数码影像</a>
+                        </li>
+                        <li>
+                            <a href="#" class="none">手机配件</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+            <ul class="title_box">
+                <span>电脑产品</span>
+                <li class="appliance">
+                    <ul class="title_text">
+                        <li>
+                            <a href="#" class="spacing">笔&nbsp;&nbsp;记&nbsp;&nbsp;本</a>
+                        </li>
+                        <li>
+                            <a href="#" class="none">办公耗材</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="appliance">
+                    <ul class="title_text">
+                        <li>
+                            <a href="#">电脑软件</a>
+                        </li>
+                        <li>
+                            <a href="#" class="none">网络产品</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="appliance">
+                    <ul class="title_text">
+                        <li>
+                            <a href="#">办公设备</a>
+                        </li>
+                        <li>
+                            <a href="#" class="none">电脑整机</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+            <ul class="title_box">
+                <span>日用百货</span>
+                <li class="appliance">
+                    <ul class="title_text">
+                        <li>
+                            <a href="#">玩具乐器</a>
+                        </li>
+                        <li>
+                            <a href="#" class="none">个人化妆</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="appliance">
+                    <ul class="title_text">
+                        <li>
+                            <a href="#">礼品箱包</a>
+                        </li>
+                        <li>
+                            <a href="#" class="none">钟表首饰</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+            <ul class="title_box">
+                <span>服装鞋帽</span>
+                <li class="appliance">
+                    <ul class="title_text">
+                        <li>
+                            <a href="#" class="spacing">运&nbsp;&nbsp;动&nbsp;&nbsp;鞋</a>
+                        </li>
+                        <li>
+                            <a href="#" class="none">厨房电器</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="appliance">
+                    <ul class="title_text">
+                        <li>
+                            <a href="#">男士服装</a>
+                        </li>
+                        <li>
+                            <a href="#" class="spacing none">运&nbsp;&nbsp;动&nbsp;&nbsp;装</a>
+                        </li>
+                    </ul>
+                </li>
+            </ul>
+            <ul class="title_box">
+                <span>运动健康</span>
+                <li class="appliance">
+                    <ul class="title_text">
+                        <li>
+                            <a href="#">户外运动</a>
+                        </li>
+                        <li>
+                            <a href="#" class="none">运动器材</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="appliance">
+                    <ul class="title_text">
+                        <li>
+                            <a href="#">养身器械</a>
+                        </li>
+                        <li>
+                            <a href="#" class="none">健康食品</a>
+                        </li>
+                    </ul>
+                </li>
+                <li class="appliance">
+                    <a href="#" class="right_box_a">所有分类&gt;&gt;</a>
+                </li>
+            </ul>
+        </div>
+    </div>
+    <!--图片轮播-->
+    <div class="banner_wrap" id="wrap">
+        <ul id="pic">
+            <li><img src="image/banner/1.jpg" /></li>
+            <li><img src="image/banner/2.jpg" /></li>
+            <li><img src="image/banner/3.jpg" /></li>
+            <li><img src="image/banner/4.jpg" /></li>
+            <li><img src="image/banner/5.jpg" /></li>
+            <li><img src="image/banner/6.jpg" /></li>
+            <li><img src="image/banner/7.jpg" /></li>
+            <li><img src="image/banner/8.jpg" /></li>
+            <li><img src="image/banner/9.jpg" /></li>
+            <li><img src="image/banner/10.jpg" /></li>
+        </ul>
+        <ol id="list">
+            <li class="active">1</li>
+            <li>2</li>
+            <li>3</li>
+            <li>4</li>
+            <li>5</li>
+            <li>6</li>
+            <li>7</li>
+            <li>8</li>
+            <li>9</li>
+            <li>10</li>
+        </ol>
+    </div>
+    <!--网站新闻-->
+    <div class="new_press">
+        <span class="text1_box">
+            网站新闻
+        </span>
+        <ul class="new_ul">
+            <li>
+                <a href="#">
+                    <p>京东商城网站模板英文版</p>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <p>京东商城网站模板英文版</p>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <p>京东商城网站模板英文版</p>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <p>京东商城网站模板英文版</p>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <p>shop商城系统</p>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <p>独立商城系统</p>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <p>网购商城系统</p>
+                </a>
+            </li>
+            <li>
+                <a href="#">
+                    <p>php商城系统</p>
+                </a>
+            </li>
+        </ul>
+    </div>
+    <!--客户服务-->
+    <div class="customer_box">
+        <span class="text1_box" >客户服务</span>
+        <div class="customer_p">
+            <p>电话：020-34506590</p>
+            <p>邮箱：webmaster@wrzc.net</p>
+            <p>传真：020-34506590</p>
+        </div>
+        <div class="pic_spanimg">
+            <span>
+                <a href="#">
+                    <img src="image/QQonline.gif" />售前客服
+                </a>
+            </span>
+            <span>
+                <a href="#">
+                    <img src="image/QQonline.gif" />售后客服
+                </a>
+            </span>
+        </div>
+        <div class="pic_spanimg">
+            <span>
+                <a href="#">
+                    <img src="image/ww.gif" />十佳掌柜
+                </a>
+            </span>
+            <span>
+                <a href="#">
+                    <img src="image/ww.gif" />网软志成
+                </a>
+            </span>
+        </div>
+        <div class="pic_spanimg">
+            <span>
+                <a href="#">
+                    <img src="image/msn.gif" />MSN客服一
+                </a>
+            </span>
+            <span>
+                <a href="#">
+                    <img src="image/msn.gif" />MSN客服二
+                </a>
+            </span>
+        </div>
+        <div class="pic_spanimg">
+            <span>
+                <a href="#">
+                    <img src="image/skype.gif" />网软志成
+                </a>
+            </span>
+        </div>
+    </div>
+    <!--商品推荐-->
+    <div class="groom_box">
+        <span class="text1_box" >商品分类推荐</span>
+        <ul class="groom_ul">
+            <li class="groom_li">
+                <img class="pigimg" src="image/right/首页_7.jpg" style="top: 35px" />
+                <span>戴尔（DELL）</span>
+                <a href="#">
+                    <p>I560SR-128 商用台式电脑（双核E5400 2G内存 500G硬盘 512M独显 DVD WIN7）</p>
+                </a>
+                <div>¥3999.00元</div>
+            </li>
+            <li class="groom_li">
+                <img class="pigimg" src="image/right/首页_6.jpg" style="top: 10px" />
+                <span>爱普生（Epson）</span>
+                <a href="#">
+                    <p>EPL-N2500 A3黑白激光打印机</p>
+                </a>
+                <div>¥7599.00元</div>
+            </li>
+            <li class="groom_li">
+                <img class="pigimg" src="image/right/首页_5.jpg" style="top: 15px" />
+                <span>创维（Skyworth）</span>
+                <a href="#">
+                    <p>32英寸液晶电视机32LO5HR（内置底座）</p>
+                </a>
+                <div>¥2599.00元</div>
+            </li>
+            <li class="groom_li">
+                <img class="pigimg" src="image/right/首页_4.jpg" style="top: 5px" />
+                <span>索尼爱立信 Z610c</span>
+                <a href="#">
+                    <p>超经典镜面</p>
+                </a>
+                <div>¥1395.00元</div>
+            </li>
+            <li class="groom_li">
+                <img class="pigimg" src="image/right/首页_3.jpg" style="top: 10px" />
+                <span>佳能 A1100IS</span>
+                <a href="#">
+                    <p>数码相机 1200万像素</p>
+                </a>
+                <div>¥4395.00元</div>
+            </li>
+            <li class="groom_li">
+                <img class="pigimg" src="image/right/首页_2.jpg" style="top:10px"/>
+                <span>佳能 A480</span>
+                <a href="#">
+                    <p>数码相机 1000万像素2.5屏幕 新款</p>
+                </a>
+                <div>¥5398.00元</div>
+            </li>
+            <li class="groom_li">
+                <img class="pigimg" src="image/right/首页_1.jpg" style="top: 10px" >
+                <span>索尼S500C</span>
+                <a href="#">
+                    <p>滑盖全国保修 带发票</p>
+                </a>
+                <div>¥1395.00元</div>
+            </li>
+        </ul>
+    </div>
+    <!--好礼左和右-->
+    <div class="gift_box">
+        <a href="#"><img src="image/right_01.jpg" /></a>
+    </div>
+    <div class="shool_box1">
+        <a href="#">
+            <img src="image/left_01.gif" />
+        </a>
+    </div>
+    <div class="brand_box">
+        <span class="text1_box">
+            推荐品牌
+        </span>
+        <div class="pic_img2">
+            <img src="image/trademark/商标_1.jpg" />
+            <img src="image/trademark/商标_2.jpg" />
+            <img src="image/trademark/商标_3.jpg" />
+            <img src="image/trademark/商标_4.jpg" />
+            <img src="image/trademark/商标_5.jpg" />
+            <img src="image/trademark/商标_6.jpg" />
+            <div class="masking_trademark">
+                <div class="bg_color">
+                    <a href="#"><p></p></a>
+                </div>
+                <div class="bg_color">
+                    <a href="#"><p></p></a>
+                </div>
+                <div class="bg_color">
+                    <a href="#"><p></p></a>
+                </div>
+                <div class="bg_color">
+                    <a href="#"><p></p></a>
+                </div>
+                <div class="bg_color">
+                    <a href="#"><p></p></a>
+                </div>
+                <div class="bg_color">
+                    <a href="#"><p></p></a>
+                </div>
+            </div>
+        </div>
+        <span class="span"><a href="#">所有品牌&gt;&gt;</a></span>
+    </div>
+    <div class="shool_box2">
+        <a href="#">
+            <img src="image/left_02.jpg" />
+        </a>
+    </div>
+    <div class="partner_box">
+        <span class="text1_box" >合作伙伴</span>
+        <p><a href="#">网软志成人才</a></p>
+        <p><a href="#">网软志成商城</a></p>
+    </div>
+    <!--中间商品各类小盒子-->
+    <!--推荐商品-->
+    <div class="groom_box2">
+        <div class="top_groom">
+            <span class="text3_box">推荐商品</span>
+            <div><a href="#"><img src="image/more.gif" /></a></div>
+        </div>
+        <div class="pic_wares">
+            <div class="img_wares">
+                <img src="image/wares/wares1.jpg" />
+                <p><a href="#">霍尼韦尔（Honeywell)</a></p>
+                <span>¥1298.00元</span>
+            </div>
+            <div class="img_wares">
+                <img src="image/wares/wares2.jpg" />
+                <p><a href="#">戴尔（Dell）I560Sr-128 商用</a></p>
+                <span>¥1298.00元</span>
+            </div>
+            <div class="img_wares">
+                <img src="image/wares/wares3.jpg" />
+                <p><a href="#">爱普生（Epson）EPL-N2500 A3黑</a></p>
+                <span>¥1298.00元</span>
+            </div>
+            <div class="img_wares">
+                <img src="image/wares/wares4.jpg" />
+                <p><a href="#">美的（midea）电脑版电压力锅PCS507</a></p>
+                <span>¥1298.00元</span>
+            </div>
+            <div class="img_wares">
+                <img src="image/wares/wares5.jpg" />
+                <p><a href="#">创维（Skyworth）32英寸液晶电视</a></p>
+                <span>¥1298.00元</span>
+            </div>
+            <div class="img_wares">
+                <img src="image/wares/wares6.jpg" />
+                <p><a href="#">创维（Skyworth）32英寸液晶电视</a></p>
+                <span>¥1298.00元</span>
+            </div>
+            <div class="img_wares">
+                <img src="image/wares/wares7.jpg" />
+                <p><a href="#">创维（Skyworth）32英寸液晶电视</a></p>
+                <span>¥1298.00元</span>
+            </div>
+            <div class="img_wares">
+                <img src="image/wares/wares8.jpg" />
+                <p><a href="#">创维（Skyworth）32英寸液晶电视</a></p>
+                <span>¥1298.00元</span>
+            </div>
+            <div class="img_wares">
+                <img src="image/wares/wares9.jpg" />
+                <p><a href="#">创维（Skyworth）32英寸液晶电视</a></p>
+                <span>¥1298.00元</span>
+            </div>
+            <div class="img_wares">
+                <img src="image/wares/wares10.jpg" />
+                <p><a href="#">创维（Skyworth）32英寸液晶电视</a></p>
+                <span>¥1298.00元</span>
+            </div>
+        </div>
+    </div>
+    <!--热卖商品-->
+    <div class="groom_box3">
+        <div class="top_groom">
+            <span class="text3_box">热卖商品</span>
+            <div><a href="#"><img src="image/more.gif" /></a></div>
+        </div>
+        <div class="pic_wares">
+            <div class="img_wares">
+                <img src="image/wares/wares1.jpg" />
+                <p><a href="#">霍尼韦尔（Honeywell)</a></p>
+                <span>¥1298.00元</span>
+            </div>
+            <div class="img_wares">
+                <img src="image/wares/wares2.jpg" />
+                <p><a href="#">戴尔（Dell）I560Sr-128 商用</a></p>
+                <span>¥1298.00元</span>
+            </div>
+            <div class="img_wares">
+                <img src="image/wares/wares3.jpg" />
+                <p><a href="#">爱普生（Epson）EPL-N2500 A3黑</a></p>
+                <span>¥1298.00元</span>
+            </div>
+            <div class="img_wares">
+                <img src="image/wares/wares4.jpg" />
+                <p><a href="#">美的（midea）电脑版电压力锅PCS507</a></p>
+                <span>¥1298.00元</span>
+            </div>
+            <div class="img_wares">
+                <img src="image/wares/wares5.jpg" />
+                <p><a href="#">创维（Skyworth）32英寸液晶电视</a></p>
+                <span>¥1298.00元</span>
+            </div>
+        </div>
+    </div>
+    <!--特价商品-->
+    <div class="groom_box4">
+        <div class="top_groom">
+            <span class="text3_box">特价商品</span>
+            <div><a href="#"><img src="image/more.gif" /></a></div>
+        </div>
+        <div class="pic_wares">
+            <div class="img_wares">
+                <img src="image/wares/wares1.jpg" />
+                <p><a href="#">霍尼韦尔（Honeywell)</a></p>
+                <span>¥1298.00元</span>
+            </div>
+            <div class="img_wares">
+                <img src="image/wares/wares2.jpg" />
+                <p><a href="#">戴尔（Dell）I560Sr-128 商用</a></p>
+                <span>¥1298.00元</span>
+            </div>
+            <div class="img_wares">
+                <img src="image/wares/wares3.jpg" />
+                <p><a href="#">爱普生（Epson）EPL-N2500 A3黑</a></p>
+                <span>¥1298.00元</span>
+            </div>
+            <div class="img_wares">
+                <img src="image/wares/wares4.jpg" />
+                <p><a href="#">美的（midea）电脑版电压力锅PCS507</a></p>
+                <span>¥1298.00元</span>
+            </div>
+            <div class="img_wares">
+                <img src="image/wares/wares5.jpg" />
+                <p><a href="#">创维（Skyworth）32英寸液晶电视</a></p>
+                <span>¥1298.00元</span>
+            </div>
+        </div>
+        <div>
+            <a href="#"><img src="image/11.jpg" /></a>
+        </div>
+    </div>
+    <!--最新商品-->
+    <div class="groom_box5">
+        <div class="top_groom">
+            <span class="text3_box">最新商品</span>
+            <div><a href="#"><img src="image/more.gif" /></a></div>
+        </div>
+        <div class="pic_wares">
+            <div class="img_wares">
+                <img src="image/wares/wares1.jpg" />
+                <p><a href="#">霍尼韦尔（Honeywell)</a></p>
+                <span>¥1298.00元</span>
+            </div>
+            <div class="img_wares">
+                <img src="image/wares/wares2.jpg" />
+                <p><a href="#">戴尔（Dell）I560Sr-128 商用</a></p>
+                <span>¥1298.00元</span>
+            </div>
+            <div class="img_wares">
+                <img src="image/wares/wares3.jpg" />
+                <p><a href="#">爱普生（Epson）EPL-N2500 A3黑</a></p>
+                <span>¥1298.00元</span>
+            </div>
+            <div class="img_wares">
+                <img src="image/wares/wares4.jpg" />
+                <p><a href="#">美的（midea）电脑版电压力锅PCS507</a></p>
+                <span>¥1298.00元</span>
+            </div>
+            <div class="img_wares">
+                <img src="image/wares/wares5.jpg" />
+                <p><a href="#">创维（Skyworth）32英寸液晶电视</a></p>
+                <span>¥1298.00元</span>
+            </div>
+        </div>
+    </div>
+    <!--支付方式-->
+    <div class="pay_box">
+        <p>本站支持一下支付方式:</p>
+        <div>
+            <img src="image/pay/logo_tenpay.gif" />
+            <img src="image/pay/logo_alipay.gif" />
+            <img src="image/pay/logo_paypal.gif" />
+            <img src="image/pay/logo_cncard.gif" />
+            <img src="image/pay/logo_99bill.jpg" />
+            <img src="image/pay/logo_ebank.gif" />
+        </div>
+    </div>
+</div>
+
+<!--脚头部方框-->
+<div class="footer_top">
+    <div class="footer_top_1">
+        <ul>
+            <li>关于我们</li>
+            <li>付款方式</li>
+            <li>送货上门</li>
+            <li>售后服务</li>
+            <li>购物帮助</li>
+        </ul>
+    </div>
+    <div class="footer_top_2">
+        <ul>
+            <li>
+                <span> > </span>
+                <a href="#"><span>发展历程</span></a>
+            </li>
+            <li>
+                <span> > </span>
+                <a href="#"><span>联系方式</span></a>
+            </li>
+            <li>
+                <span> > </span>
+                <a href="#"><span>公司介绍</span></a>
+            </li>
+            <li>
+                <span> > </span>
+                <a href="#"><span>企业文化</span></a>
+            </li>
+        </ul>
+        <ul>
+            <li>
+                <span> > </span>
+                <a href="#"><span>银行汇款</span></a>
+            </li>
+            <li>
+                <span> > </span>
+                <a href="#"><span>在线支付</span></a>
+            </li>
+            <li>
+                <span> > </span>
+                <a href="#"><span>银行汇款</span></a>
+            </li>
+            <li>
+                <span> > </span>
+                <a href="#"><span>公司转账</span></a>
+            </li>
+        </ul>
+        <ul>
+            <li>
+                <span> > </span>
+                <a href="#"><span>上门自理</span></a>
+            </li>
+            <li>
+                <span> > </span>
+                <a href="#"><span>EMS快递</span></a>
+            </li>
+            <li>
+                <span> > </span>
+                <a href="#"><span>快递发货</span></a>
+            </li>
+            <li>
+                <span> > </span>
+                <a href="#"><span>平邮发货</span></a>
+            </li>
+        </ul>
+        <ul>
+            <li>
+                <span> > </span>
+                <a href="#"><span>质保承诺</span></a>
+            </li>
+            <li>
+                <span> > </span>
+                <a href="#"><span>退换货政策</span></a>
+            </li>
+            <li>
+                <span> > </span>
+                <a href="#"><span>价格保护</span></a>
+            </li>
+            <li>
+                <span> > </span>
+                <a href="#"><span>返修申请</span></a>
+
+            </li>
+        </ul>
+        <ul>
+            <li>
+                <span> > </span>
+                <a href="#"><span>用户等级</span></a>
+            </li>
+            <li>
+                <span> > </span>
+                <a href="#"><span>积分获得与使用</span></a>
+            </li>
+            <li>
+                <span> > </span>
+                <a href="#"><span>购物流程</span></a>
+            </li>
+            <li>
+                <span> > </span>
+                <a href="#"><span>常见问题</span></a>
+            </li>
+        </ul>
+    </div>
+</div>
+<!--脚联系方式-->
+<div class="footer_main">
+    <div class="footer_main_1">
+        <ul>
+            <li>淘宝店</li>
+            <li>易趣店</li>
+            <li>拍拍店</li>
+            <li>天猫店</li>
+        </ul>
+    </div>
+    <div class="footer_main_2">
+        <span>Copyright 2015</span>
+        <span>127.0.0.1.</span>
+        <span>All Right Reserved.</span>
+        <span>版权所有：广州网软志成信息技术有限公司</span>
+    </div>
+    <div class="footer_main_2">
+        <span>客户服务热线：020-34506590</span>
+        <span>传真：020-34506590</span>
+    </div>
+    <div class="footer_main_3">
+        <span>客户服务邮箱：</span>
+        <span>webmaster@wrzc.net 粤ICP备06122404号 管理进入</span>
+    </div>
+    <div class="footer_main_4">
+        <div>
+            <span>总部地址：广州市天河区软件产业基地B栋</span>
+            <span>联系电话：020-34506590 34700400 34709708 13719472523</span>
+        </div>
+        <div class="footer_main_5">
+            <ul>
+                <li>客服QQ：</li>
+                <li>
+                    <span>290116505</span>
+                    <a href="#"><img src="image/qqphone_03.png" /></a>
+                </li>
+                <li>
+                    <span>381551315</span>
+                    <a href="#"><img src="image/qqphone_03.png" /></a>
+                </li>
+                <li>
+                    <span>541512115</span>
+                    <a href="#"><img src="image/qqphone_03.png" /></a>
+                </li>
+                <li>
+                    <span>144692348</span>
+                    <a href="#"><img src="image/qqphone_03.png" /></a>
+                </li>
+            </ul>
+            <ul>
+                <li>客服QQ：</li>
+                <li>
+                    <span>290116505</span>
+                    <a href="#"><img src="image/qqphone_03.png" /></a>
+                </li>
+                <li>
+                    <span>381551315</span>
+                    <a href="#"><img src="image/qqphone_03.png" /></a>
+                </li>
+                <li>
+                    <span>541512115</span>
+                    <a href="#"><img src="image/qqphone_03.png" /></a>
+                </li>
+                <li>
+                    <span>144692348</span>
+                    <a href="#"><img src="image/qqphone_03.png" /></a>
+                </li>
+            </ul>
+        </div>
+        <div class="footer_main_6">
+            <div>E-mail:webmaster@wrzc.net MSN:wrtxcn@hotmail.com</div>
+            <span>Copyright(c)2000-2020 www.wrzc.net 广州网软志成</span>
+            <span>版权所有:</span>
+            <span><a href="#">后台管理登录入口</a></span>
+        </div>
+    </div>
+</div>
+<!--脚底部方框-->
+<div class="footer_foot">
+    <div class="footer_foot_1">
+        <span>广州网软志成更多更好的网站系统等你来用</span>
+    </div>
+    <div class="footer_foot_2">
+        仿京东商城源码，仿京东商城源码下载，仿京东购物系统商业版，在线商城京东商城网页模板，免费京东商城源代码，网络商城程序，商城程序，独立商城系统，商城程序开发，
+        仿京东商城源码，仿京东商城源码下载，仿京东购物系统商业版，在线商城京东商城网页模板，免费京东商城源代码，网络商城程序，商城程序，独立商城系统，商城程序开发，
+        仿京东商城源码，仿京东商城源码下载，仿京东购物系统商业版，在线商城京东商城网页模板，免费京东商城源代码，网络商城程序，商城程序，独立商城系统，商城程序开发，
+        仿京东商城源码，仿京东商城源码下载，仿京东购物系统商业版，在线商城京东商城网页模板，免费京东商城源代码，网络商城程序，商城程序，独立商城系统，商城程序开发，
+        仿京东商城源码，仿京东商城源码下载，仿京东购物系统商业版，在线商城京东商城网页模板，免费京东商城源代码，网络商城程序，商城程序，独立商城系统，商城程序开发，
+        仿京东商城源码，仿京东商城源码下载，仿京东购物系统商业版，在线商城京东商城网页模板，免费京东商城源代码，网络商城程序，商城程序，独立商城系统，商城程序开发，
+        仿京东商城源码，仿京东商城源码下载，仿京东购物系统商业版，在线商城京东商城网页模板，免费京东商城源代码，网络商城程序，商城程序，独立商城系统，商城程序开发，
+        仿京东商城源码，仿京东商城源码下载，仿京东购物系统商业版，在线商城京东商城网页模板，免费京东商城源代码，网络商城程序，商城程序，独立商城系统，商城程序开发。
+    </div>
+    <div class="footer_foot_3">
+        <span>特大优惠：加379元即送300M空间，顶级域名1个，加579元即送500M空间，顶级域名1个，加879元即送1000M空间，顶级域名1个</span>
+        <img src="image/footer_07.png" />
+    </div>
+</div>
+</body>
+</html>
