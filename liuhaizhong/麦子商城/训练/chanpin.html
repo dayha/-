@@ -1,0 +1,410 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <link rel="stylesheet" href="css/login.css" />
+    <link rel="stylesheet" href="css/footer.css" />
+    <link rel="stylesheet" href="css/quanbubian.css" />
+    <link rel="stylesheet" href="css/changpin.css" />
+    <script src="jquery/dist/jquery.min.js"></script>
+    <script src="js/footer.js"></script>
+    <script src="js/login.js"></script>
+    <script src="js/changpin.js"></script>
+</head>
+<body>
+<!--头部盒子-->
+<div id="top_box">
+    <!--logo盒子-->
+    <div class="logo">
+        <img src="project/image/logo.gif" alt="">
+    </div>
+    <!--用户登录盒子-->
+    <div class="user_login">
+        <p>您好，欢迎来到京东商城!想继续购物？<a href="login.html">[请登录]</a>,新用户？<a href="#">[请注册]</a></p>
+    </div>
+    <!--头部菜单盒子和日期-->
+    <div class="top_submenu">
+        <div class="submenu_box">
+            <ul>
+                <li><a href="#">帮助中心</a></li>
+                <li><a href="#">客户反馈</a></li>
+                <li><a href="#">网站地图</a></li>
+                <li><a href="#">加入收藏</a></li>
+            </ul>
+        </div>
+        <div class="day_box">
+            <p id="date_box"></p>
+        </div>
+    </div>
+    <!--通告栏-->
+    <div class="top_notice">
+        <marquee direction="up" scrollamount="2" onmouseover="stop()" onmouseout="start()">
+            <p>
+                <img src="project/image/notice.gif">
+                <a href="#">仿京东商城最强大版本升级，感谢用户支持域信任</a>
+            </p>
+            <br />
+            <p>
+                <img src="project/image/notice.gif">
+                <a href="#">仿京东商城最强大版本升级，感谢用户支持域信任</a>
+            </p>
+            <br />
+            <p>
+                <img src="project/image/notice.gif">
+                <a href="#">仿京东商城最强大版本升级，感谢用户支持域信任</a>
+            </p>
+        </marquee>
+    </div>
+</div>
+<!--导航菜单-->
+<div id="nav_box">
+    <!--菜单盒子-->
+    <div class="nav_small">
+        <ul>
+            <li><a href="#">网站首页</a></li>
+            <li><a href="#">风雷导航</a></li>
+            <li><a href="#">品牌导航</a></li>
+            <li><a href="#">购物帮助</a></li>
+            <li><a href="#">新闻资讯</a></li>
+            <li><a href="#">报价单</a></li>
+            <li><a href="#" class="upright_box">发货单</a></li>
+        </ul>
+    </div>
+    <!--搜索盒子-->
+    <div class="search_box">
+        <div class="search_smallbox">
+            <span>商品搜索：</span>
+            <select>
+                <option value="">所有分类</option>
+                <option value="">服装</option>
+                <option value="">鞋类</option>
+                <option value="">食品</option>
+                <option value="">生活用品</option>
+            </select>
+            <input type="search" name="search" id="search">
+            <button>搜索</button>
+            <span>高级/组合搜索</span>
+        </div>
+        <div class="shopping_box">
+            <span class="shopping_car">购物车暂时为空</span>
+            <span class="balance_box">去结算</span>
+            <span class="shopping_user">用户中心</span>
+        </div>
+    </div>
+</div>
+<!--页面主要内容-->
+<div class="main">
+<!--左侧栏方框-->
+    <div class="sidebar_left">
+        <div class="sidebar_left1">
+            <div class="user_news">用户信息</div>
+            <div class="user_news1">
+                <img src="project/image/1.gif" />
+                <span><a href="#">注册</a></span>
+                <span> / </span>
+                <span><a href="#">登录</a></span>
+            </div>
+            <div  class="user_news1">
+                <img src="project/image/8.gif" />
+                <span>购物车(0)</span>
+            </div>
+            <div  class="user_news1">
+                <img src="project/image/10.gif"/>
+                <span>对比框(0)</span>
+            </div>
+        </div>
+        <div class="sidebar_left1">
+            <div class="user_news">最近浏览产品</div>
+            <div class="browse">
+                <img src="project/image/jinghuaqi_03.png"/>
+                <div class="browse_1">
+                    <span>霍尼韦尔</span><br />
+                    <span>（Honeywell）5010-CHN空气净化器</span><br />
+                    <i>￥1298元</i>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="main0">
+        <div class="main1">
+            <div class="main1_top">
+                <div class="site">
+                    <img src="project/image/home.gif" />
+                    <span>您的位置：</span>
+                    <span>  首页 >> 家用电器 >> 生活电器 >> </span>
+                    <span>霍尼韦尔（Honeywell）5010-CHN空气净化器</span>
+                </div>
+                <div class="main1_top1">
+                    <img src="project/image/jinghuaqi1_03.png"/>
+                    <div class="main1_top1_text">
+                        <div class="main1_top1_text_name">
+                            <span>霍尼韦尔（Honeywell）5010-CHN空气净化器</span>
+                            <i>
+                                <a href="#">(0篇用户评论</a>
+                                <i>|</i>
+                                <a href="#">写评论)</a>
+                            </i>
+                        </div>
+                        <div class="main1_top1_text_number">
+                            <span>商品编号：10042710521400</span>
+                            <br/>
+                            <span>商品积分：</span>
+                            <i>1298</i>
+                            <a href="#">(积分可兑换优惠券)</a>
+                        </div>
+                        <div class="main1_top1_text_price">
+                            <div class="main1_top1_text_price1">
+                                <span>市场价格：</span>
+                                <del>￥1998.00元</del>
+                            </div>
+                            <div class="main1_top1_text_price2">
+                                <span>本站价格：</span>
+                                <i>￥1298.00元</i>
+                            </div>
+                            <div class="main1_top1_text_price2">
+                                <span>为您节省：</span>
+                                <i>￥700.00元</i>
+                            </div>
+                            <div class="main1_top1_text_price_num">
+                                <span>订购数量：</span>
+                                <input type="text" value="1">
+                            </div>
+                        </div>
+                        <div class="main1_top1_text_link">
+                            <span><a href="#"><img src="project/image/buy.gif"/> </a></span>
+                            <span><a href="#"><img src="project/image/duibi.gif"/></a></span>
+                            <span><a href="#"><img src="project/image/shoucang.gif"/></a></span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="main1_main">
+                <span>下一个商品：</span>
+                <i>美的（midea）电脑版电压力锅PCS507——锅双胆</i>
+                <span><a href="#"><img src="project/image/alipay_buy.gif"/></a></span>
+                <span><a href="#"><img src="project/image/paypal_buy.gif"/></a></span>
+            </div>
+            <div class="main1_foot">
+                <e class="main1_foot0">
+                    <ul>
+                        <li class="active">详细说明</li>
+                        <li>相关商品</li>
+                        <li>商品评论</li>
+                        <li>付款方式</li>
+                        <li>送货方式</li>
+                    </ul>
+                </e>
+                <div class="main1_foot1"><p>AAA  那收到马赛克女裁判我是你妈猫哭老鼠豆腐皮没视频课程煤气瓶看什么你吃泡面网球睡了吗看什么新产品速度快女排鲁大师开幕词可莱丝名称阿斯利康皮卡丘我水库里的精品废弃物恐怕是发胖科技水平你们是上课了看见你发泡剂买瓶水MVP门票没什么快速登录积分绝对水平飞机票简单平均分平均减肥开始机打发票空间的皮肤健康跑破束带结发破解就是豆粕飞机票结束的平均分配金卡戴珊破解</p></div>
+                <div class="main1_foot2"><p>BBB  那收到马赛克女裁判我是你妈猫哭老鼠豆腐皮没视频课程煤气瓶看什么你吃泡面网球睡了吗看什么新产品速度快女排鲁大师开幕词可莱丝名称阿斯利康皮卡丘我水库里的精品废弃物恐怕是发胖科技水平你们是上课了看见你发泡剂买瓶水MVP门票没什么快速登录积分绝对水平飞机票简单平均分平均减肥开始机打发票空间的皮肤健康跑破束带结发破解就是豆粕飞机票结束的平均分配金卡戴珊破解</p></div>
+                <div class="main1_foot3"><p>CCC  那收到马赛克女裁判我是你妈猫哭老鼠豆腐皮没视频课程煤气瓶看什么你吃泡面网球睡了吗看什么新产品速度快女排鲁大师开幕词可莱丝名称阿斯利康皮卡丘我水库里的精品废弃物恐怕是发胖科技水平你们是上课了看见你发泡剂买瓶水MVP门票没什么快速登录积分绝对水平飞机票简单平均分平均减肥开始机打发票空间的皮肤健康跑破束带结发破解就是豆粕飞机票结束的平均分配金卡戴珊破解</p></div>
+                <div class="main1_foot4"><p>DDD  那收到马赛克女裁判我是你妈猫哭老鼠豆腐皮没视频课程煤气瓶看什么你吃泡面网球睡了吗看什么新产品速度快女排鲁大师开幕词可莱丝名称阿斯利康皮卡丘我水库里的精品废弃物恐怕是发胖科技水平你们是上课了看见你发泡剂买瓶水MVP门票没什么快速登录积分绝对水平飞机票简单平均分平均减肥开始机打发票空间的皮肤健康跑破束带结发破解就是豆粕飞机票结束的平均分配金卡戴珊破解</p></div>
+                <div class="main1_foot5"><p>EEE  那收到马赛克女裁判我是你妈猫哭老鼠豆腐皮没视频课程煤气瓶看什么你吃泡面网球睡了吗看什么新产品速度快女排鲁大师开幕词可莱丝名称阿斯利康皮卡丘我水库里的精品废弃物恐怕是发胖科技水平你们是上课了看见你发泡剂买瓶水MVP门票没什么快速登录积分绝对水平飞机票简单平均分平均减肥开始机打发票空间的皮肤健康跑破束带结发破解就是豆粕飞机票结束的平均分配金卡戴珊破解</p></div>
+            </div>
+    </div>
+    </div>
+</div>
+<!--脚头部方框-->
+<div class="footer_top">
+    <div class="footer_top_1">
+        <ul>
+            <li>关于我们</li>
+            <li>付款方式</li>
+            <li>送货上门</li>
+            <li>售后服务</li>
+            <li>购物帮助</li>
+        </ul>
+    </div>
+    <div class="footer_top_2">
+        <ul>
+            <li>
+                <span> > </span>
+                <a href="#"><span>发展历程</span></a>
+            </li>
+            <li>
+                <span> > </span>
+                <a href="#"><span>联系方式</span></a>
+            </li>
+            <li>
+                <span> > </span>
+                <a href="#"><span>公司介绍</span></a>
+            </li>
+            <li>
+                <span> > </span>
+                <a href="#"><span>企业文化</span></a>
+            </li>
+        </ul>
+        <ul>
+            <li>
+                <span> > </span>
+                <a href="#"><span>银行汇款</span></a>
+            </li>
+            <li>
+                <span> > </span>
+                <a href="#"><span>在线支付</span></a>
+            </li>
+            <li>
+                <span> > </span>
+                <a href="#"><span>银行汇款</span></a>
+            </li>
+            <li>
+                <span> > </span>
+                <a href="#"><span>公司转账</span></a>
+            </li>
+        </ul>
+        <ul>
+            <li>
+                <span> > </span>
+                <a href="#"><span>上门自理</span></a>
+            </li>
+            <li>
+                <span> > </span>
+                <a href="#"><span>EMS快递</span></a>
+            </li>
+            <li>
+                <span> > </span>
+                <a href="#"><span>快递发货</span></a>
+            </li>
+            <li>
+                <span> > </span>
+                <a href="#"><span>平邮发货</span></a>
+            </li>
+        </ul>
+        <ul>
+            <li>
+                <span> > </span>
+                <a href="#"><span>质保承诺</span></a>
+            </li>
+            <li>
+                <span> > </span>
+                <a href="#"><span>退换货政策</span></a>
+            </li>
+            <li>
+                <span> > </span>
+                <a href="#"><span>价格保护</span></a>
+            </li>
+            <li>
+                <span> > </span>
+                <a href="#"><span>返修申请</span></a>
+
+            </li>
+        </ul>
+        <ul>
+            <li>
+                <span> > </span>
+                <a href="#"><span>用户等级</span></a>
+            </li>
+            <li>
+                <span> > </span>
+                <a href="#"><span>积分获得与使用</span></a>
+            </li>
+            <li>
+                <span> > </span>
+                <a href="#"><span>购物流程</span></a>
+            </li>
+            <li>
+                <span> > </span>
+                <a href="#"><span>常见问题</span></a>
+            </li>
+        </ul>
+    </div>
+</div>
+<!--脚联系方式-->
+<div class="footer_main">
+    <div class="footer_main_1">
+        <ul>
+            <li>淘宝店</li>
+            <li>易趣店</li>
+            <li>拍拍店</li>
+            <li>天猫店</li>
+        </ul>
+    </div>
+    <div class="footer_main_2">
+        <span>Copyright 2015</span>
+        <span>127.0.0.1.</span>
+        <span>All Right Reserved.</span>
+        <span>版权所有：广州网软志成信息技术有限公司</span>
+    </div>
+    <div class="footer_main_2">
+        <span>客户服务热线：020-34506590</span>
+        <span>传真：020-34506590</span>
+    </div>
+    <div class="footer_main_3">
+        <span>客户服务邮箱：</span>
+        <span>webmaster@wrzc.net 粤ICP备06122404号 管理进入</span>
+    </div>
+    <div class="footer_main_4">
+        <div>
+            <span>总部地址：广州市天河区软件产业基地B栋</span>
+            <span>联系电话：020-34506590 34700400 34709708 13719472523</span>
+        </div>
+        <div class="footer_main_5">
+            <ul>
+                <li>客服QQ：</li>
+                <li>
+                    <span>290116505</span>
+                    <a href="#"><img src="project/image/qqphone_03.png" /></a>
+                </li>
+                <li>
+                    <span>381551315</span>
+                    <a href="#"><img src="project/image/qqphone_03.png" /></a>
+                </li>
+                <li>
+                    <span>541512115</span>
+                    <a href="#"><img src="project/image/qqphone_03.png" /></a>
+                </li>
+                <li>
+                    <span>144692348</span>
+                    <a href="#"><img src="project/image/qqphone_03.png" /></a>
+                </li>
+            </ul>
+            <ul>
+                <li>客服QQ：</li>
+                <li>
+                    <span>290116505</span>
+                    <a href="#"><img src="project/image/qqphone_03.png" /></a>
+                </li>
+                <li>
+                    <span>381551315</span>
+                    <a href="#"><img src="project/image/qqphone_03.png" /></a>
+                </li>
+                <li>
+                    <span>541512115</span>
+                    <a href="#"><img src="project/image/qqphone_03.png" /></a>
+                </li>
+                <li>
+                    <span>144692348</span>
+                    <a href="#"><img src="project/image/qqphone_03.png" /></a>
+                </li>
+            </ul>
+        </div>
+        <div class="footer_main_6">
+            <div>E-mail:webmaster@wrzc.net MSN:wrtxcn@hotmail.com</div>
+            <span>Copyright(c)2000-2020 www.wrzc.net 广州网软志成</span>
+            <span>版权所有:</span>
+            <span><a href="#">后台管理登录入口</a></span>
+        </div>
+    </div>
+</div>
+<!--脚底部方框-->
+<div class="footer_foot">
+    <div class="footer_foot_1">
+        <span>广州网软志成更多更好的网站系统等你来用</span>
+    </div>
+    <div class="footer_foot_2">
+        仿京东商城源码，仿京东商城源码下载，仿京东购物系统商业版，在线商城京东商城网页模板，免费京东商城源代码，网络商城程序，商城程序，独立商城系统，商城程序开发，
+        仿京东商城源码，仿京东商城源码下载，仿京东购物系统商业版，在线商城京东商城网页模板，免费京东商城源代码，网络商城程序，商城程序，独立商城系统，商城程序开发，
+        仿京东商城源码，仿京东商城源码下载，仿京东购物系统商业版，在线商城京东商城网页模板，免费京东商城源代码，网络商城程序，商城程序，独立商城系统，商城程序开发，
+        仿京东商城源码，仿京东商城源码下载，仿京东购物系统商业版，在线商城京东商城网页模板，免费京东商城源代码，网络商城程序，商城程序，独立商城系统，商城程序开发，
+        仿京东商城源码，仿京东商城源码下载，仿京东购物系统商业版，在线商城京东商城网页模板，免费京东商城源代码，网络商城程序，商城程序，独立商城系统，商城程序开发，
+        仿京东商城源码，仿京东商城源码下载，仿京东购物系统商业版，在线商城京东商城网页模板，免费京东商城源代码，网络商城程序，商城程序，独立商城系统，商城程序开发，
+        仿京东商城源码，仿京东商城源码下载，仿京东购物系统商业版，在线商城京东商城网页模板，免费京东商城源代码，网络商城程序，商城程序，独立商城系统，商城程序开发，
+        仿京东商城源码，仿京东商城源码下载，仿京东购物系统商业版，在线商城京东商城网页模板，免费京东商城源代码，网络商城程序，商城程序，独立商城系统，商城程序开发。
+    </div>
+    <div class="footer_foot_3">
+        <span>特大优惠：加379元即送300M空间，顶级域名1个，加579元即送500M空间，顶级域名1个，加879元即送1000M空间，顶级域名1个</span>
+        <img src="project/image/footer_07.png" />
+    </div>
+</div>
+</body>
+</html>

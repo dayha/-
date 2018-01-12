@@ -1,0 +1,103 @@
+.main{
+    width: 980px;
+    margin: 5px auto 10px;
+    position: relative;
+}
+.main_left{
+    border-radius: 6px 6px 0 0;
+    width: 194px;
+    border: 1px solid rgb(231,59,41);
+}
+.main_left_top{
+    height: 28px;
+    background: url("../project/购物车图标/yonghuxinxi_03.png") no-repeat;
+}
+.main_left ul{
+    padding: 15px;
+}
+.main_left ul li{
+    line-height: 22px;
+}
+.main_right{
+    width: 774px;
+    position: absolute;
+    left: 200px;
+    bottom: 158px;
+}
+.main_right_top{
+    height: 20px;
+    background: rgb(231,231,231);
+}
+.main_right_top i{
+    color: rgb(102,102,102);
+}
+.main_right_main{
+    height: 100px;
+}
+.main_right_main ul li{
+    float: left;
+    font-size: 13px;
+}
+.main_right_main1 ul li:nth-child(1){
+    width: 360px;
+}
+.main_right_main1 ul li:nth-child(2){
+    width: 80px;
+    text-align: center;
+}
+.main_right_main1 ul li:nth-child(3){
+    width: 80px;
+    text-align: center;
+}
+.main_right_main1 ul li:nth-child(4){
+    width: 30px;
+    text-align: center;
+}
+.main_right_main1 ul li:nth-child(5){
+    width: 40px;
+    text-align: center;
+}
+.main_right_main1 ul li:nth-child(6){
+    width: 172px;
+    text-align: center;
+}
+.main_right_main2 ul li:nth-child(1){
+    width: 360px;
+    color: rgb(120,120,120);
+}
+.main_right_main2 ul li:nth-child(2){
+    width: 80px;
+    text-align: center;
+}
+.main_right_main2 ul li:nth-child(3){
+    width: 60px;
+    text-align: center;
+}
+.main_right_main2 ul li:nth-child(5){
+    width: 24px;
+    text-align: center;
+}
+.main_right_main2 ul li:nth-child(6){
+    width: 172px;
+    text-align: center;
+}
+.main_right_main3 ul li:nth-child(1){
+    width: 360px;
+    color: rgb(120,120,120);
+}
+.main_right_main3 ul li:nth-child(2){
+    width: 80px;
+    text-align: center;
+}
+.main_right_main3 ul li:nth-child(3){
+    width: 60px;
+    text-align: center;
+}
+.main_right_main3 ul li:nth-child(5){
+    width: 24px;
+    text-align: center;
+}
+.main_right_main3 ul li:nth-child(6){
+    width: 172px;
+    text-align: center;
+}
